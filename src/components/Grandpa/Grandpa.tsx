@@ -11,10 +11,8 @@ let name = user
 return (
 <div >
 <h4>Child</h4>
-<div> User Name: {name} </div>
+<div>  {name} </div>
 <GrandChildComponent />
 </div>
 );
 };
-
-// export default ChildComponent;

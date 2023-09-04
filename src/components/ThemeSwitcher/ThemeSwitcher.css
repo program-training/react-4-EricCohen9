@@ -1,0 +1,12 @@
+.dark{
+    background-color: gray;
+}
+.light{
+    background-color: beige;
+}
+#button{
+    height: 35px;
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 300px;
+}
