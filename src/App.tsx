@@ -5,6 +5,9 @@ import { UserContextProvider } from "./components/contextProvider/contextProvide
 import { ChildComponent } from "./components/Grandpa/Grandpa";
 import { ThemeContextProvider } from "./components/themeContext/themeContext";
 import { ThemeSwitcher } from "./components/ThemeSwitcher/ThemeSwitcher";
+import { UserListProvider } from "./components/UserContext/UserContext";
+import { UserList } from "./components/UserContext/UserContext";
+import { Header } from "./components/Header/Header";
 const App = () => {
   return (
     <>
@@ -13,9 +16,14 @@ const App = () => {
             <ChildComponent />
           </UserContextProvider> */}
 
-        <ThemeContextProvider>
+        {/* <ThemeContextProvider>
           <ThemeSwitcher></ThemeSwitcher>
-        </ThemeContextProvider>
+        </ThemeContextProvider> */}
+          <UserListProvider>
+            <Header></Header>
+          </UserListProvider>
+
+        
       </div>
     </>
   );
